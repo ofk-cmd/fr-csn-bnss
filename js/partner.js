@@ -1,20 +1,33 @@
 (function () {
   "use strict";
-  var PARTNER_URL = (function () {
-    try { return atob("aHR0cHM6Ly9mYWlycGFmZi50b3AvTD90YWc9ZF81MzM5MzU4bV83MjQ2NWNf"); } catch (e) { return ""; }
-  })();
+
+  var PARTNER_URL = "https://bobaffs.org/click?o=1603&a=189";
+  var lastOpenAt = 0;
+
+  function resolvePartnerButton(target) {
+    if (!target || !target.closest) return null;
+    return target.closest(".js-go-partner");
+  }
+
   function openPartnerLink() {
     if (!PARTNER_URL) return;
-    var w = window.open(PARTNER_URL, "_blank", "noopener,noreferrer");
-    if (!w) window.location.assign(PARTNER_URL);
+    var now = Date.now();
+    if (now - lastOpenAt < 400) return;
+    lastOpenAt = now;
+    var opened = window.open(PARTNER_URL, "_blank", "noopener,noreferrer");
+    if (!opened) window.location.href = PARTNER_URL;
   }
-  function onClick(e) {
-    var btn = e.target && e.target.closest && e.target.closest(".js-go-partner");
+
+  function onPartnerClick(event) {
+    var btn = resolvePartnerButton(event.target);
     if (!btn) return;
-    e.preventDefault();
-    e.stopPropagation();
+    event.preventDefault();
+    event.stopPropagation();
+    if (typeof event.stopImmediatePropagation === "function") {
+      event.stopImmediatePropagation();
+    }
     openPartnerLink();
   }
-  document.querySelectorAll(".js-go-partner").forEach(function (b) { b.addEventListener("click", onClick); });
-  document.addEventListener("click", onClick, true);
+
+  document.addEventListener("click", onPartnerClick, true);
 })();
