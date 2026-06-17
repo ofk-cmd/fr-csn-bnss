@@ -1,0 +1,1135 @@
+.hero--page { margin-bottom: 0; }
+.hero--page .hero__banner {
+  border-radius: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.breadcrumbs {
+  padding: 1rem 1.25rem 0;
+  font-size: 0.9rem;
+  opacity: 0.85;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.breadcrumbs a { color: inherit; text-decoration: none; }
+.breadcrumbs a:hover { text-decoration: underline; }
+.multipage-banner-gap { margin: 1.5rem auto 2rem; }
+.hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.hub-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem 1.25rem;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s;
+}
+.hub-card:hover {
+  transform: translateY(-2px);
+}
+.hub-card strong { font-size: 1.05rem; }
+.hub-card span { font-size: 0.9rem; opacity: 0.85; }
+
+
+/* casino v3 bundled — live fallback when v3.css path 404s */
+/* fairpari-casino-uz.com v3 — navy blue · lime · blue CTAs (fairpari-betting.com style) */
+
+.site-casino.site-fairpari-casino-v3 {
+  --fc-plum: #0b1528;
+  --fc-plum-mid: #101d33;
+  --fc-plum-light: #152238;
+  --fc-plum-glass: rgba(11, 21, 40, 0.94);
+  --fc-teal: #1e6fff;
+  --fc-teal-bright: #4d8fff;
+  --fc-teal-dim: rgba(30, 111, 255, 0.14);
+  --fc-teal-glow: rgba(30, 111, 255, 0.35);
+  --fc-gold: #b8ff00;
+  --fc-gold-bright: #d4ff4d;
+  --fc-gold-dim: rgba(184, 255, 0, 0.14);
+  --fc-coral: #ff6b4a;
+  --fc-ink: #f8fafc;
+  --fc-muted: #94a3b8;
+  --fc-border: rgba(248, 250, 252, 0.08);
+  --fc-border-teal: rgba(30, 111, 255, 0.28);
+  --fc-border-gold: rgba(184, 255, 0, 0.32);
+  --fc-radius: 14px;
+  --fc-radius-lg: 22px;
+  --fc-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
+  color: var(--fc-ink);
+  background:
+    radial-gradient(ellipse 90% 55% at 15% -10%, rgba(30, 111, 255, 0.12), transparent 55%),
+    radial-gradient(ellipse 70% 45% at 95% 5%, rgba(184, 255, 0, 0.06), transparent 50%),
+    var(--fc-plum);
+}
+
+/* Scroll progress */
+.site-fairpari-casino-v3 .scroll-progress {
+  position: fixed; top: 0; left: 0; z-index: 10001;
+  height: 3px; width: 0; max-width: 100%;
+  background: linear-gradient(90deg, var(--fc-teal), var(--fc-gold) 65%, var(--fc-coral));
+  box-shadow: 0 0 12px var(--fc-teal-glow);
+  pointer-events: none;
+  transition: width 0.08s linear;
+}
+
+/* Header */
+.site-fairpari-casino-v3 .site-header {
+  background: var(--fc-plum-glass) !important;
+  border-bottom: 1px solid var(--fc-border-teal) !important;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+.site-fairpari-casino-v3 .brand__logo-img {
+  filter: drop-shadow(0 0 10px rgba(30, 111, 255, 0.3));
+}
+.site-fairpari-casino-v3 .nav-desktop a {
+  color: var(--fc-muted);
+  border-radius: 999px;
+  transition: color 0.2s, background 0.2s, box-shadow 0.2s;
+}
+.site-fairpari-casino-v3 .nav-desktop a:hover,
+.site-fairpari-casino-v3 .nav-desktop a.is-active {
+  color: var(--fc-ink);
+  background: var(--fc-teal-dim);
+  box-shadow: inset 0 0 0 1px var(--fc-border-teal);
+}
+.site-fairpari-casino-v3 .btn--primary {
+  background: linear-gradient(135deg, #1e6fff, #1554c7) !important;
+  color: #fff !important; border: none !important; font-weight: 700;
+}
+.site-fairpari-casino-v3 .btn--gold {
+  background: linear-gradient(135deg, #b8ff00, #9ae600) !important;
+  color: #0b1528 !important; border: none !important; font-weight: 700;
+}
+.site-fairpari-casino-v3 .btn--ghost {
+  border-color: var(--fc-border-teal) !important;
+  color: var(--fc-teal-bright) !important;
+}
+
+/* Hero — qttz-style large banner */
+.site-fairpari-casino-v3 .hero__banner {
+  border-radius: var(--fc-radius-lg) !important;
+  margin: 1rem auto 0 !important;
+  max-width: min(var(--max, 1200px), 96%) !important;
+  overflow: hidden;
+}
+.site-fairpari-casino-v3 .hero__slide-inner--split {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 2rem !important;
+  align-items: center !important;
+  padding: 2rem 1.5rem !important;
+}
+.site-fairpari-casino-v3 .hero__copy {
+  text-align: left;
+}
+.site-fairpari-casino-v3 .hero__actions {
+  justify-content: flex-start !important;
+}
+.site-fairpari-casino-v3 .hero__art.section-banner--hero,
+.site-fairpari-casino-v3 .section-banner.section-banner--hero {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  min-height: clamp(160px, 22vw, 304px) !important;
+  aspect-ratio: 5 / 1;
+  border-radius: var(--fc-radius-lg) !important;
+}
+.site-fairpari-casino-v3 .section-banner--hero .section-banner__bg {
+  position: absolute; inset: 0;
+  width: 100% !important; height: 100% !important;
+  object-fit: cover !important;
+  object-position: center right;
+  min-height: 100% !important;
+}
+.site-fairpari-casino-v3 .section-banner--hero .section-banner__caption {
+  min-height: 100%;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center;
+  padding: 1rem 1.25rem;
+}
+.site-fairpari-casino-v3 .section-banner__title {
+  color: var(--fc-gold-bright) !important;
+  font-size: clamp(1rem, 2.5vw, 1.35rem) !important;
+}
+.site-fairpari-casino-v3 .hero--page .hero__banner {
+  max-width: 100% !important;
+}
+.site-fairpari-casino-v3 .hero--page .section-banner--hero {
+  min-height: clamp(140px, 18vw, 220px) !important;
+}
+.site-fairpari-casino-v3 .hero__title {
+  background: linear-gradient(120deg, var(--fc-ink) 20%, var(--fc-teal-bright) 55%, var(--fc-gold-bright) 100%);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: clamp(1.75rem, 4.5vw, 2.85rem) !important;
+}
+.site-fairpari-casino-v3 .hero__subtitle { color: var(--fc-muted); max-width: 42rem; }
+.site-fairpari-casino-v3 .section__eyebrow {
+  color: var(--fc-gold) !important; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.72rem;
+}
+.site-fairpari-casino-v3 .section--alt {
+  background: linear-gradient(180deg, rgba(21, 34, 56, 0.65), rgba(11, 21, 40, 0.35)) !important;
+  border-block: 1px solid var(--fc-border);
+}
+
+/* Hub cards */
+.site-fairpari-casino-v3 .hub-card {
+  background: linear-gradient(160deg, rgba(38, 24, 51, 0.95), rgba(11, 21, 40, 0.98)) !important;
+  border: 1px solid var(--fc-border-teal) !important;
+  border-radius: var(--fc-radius) !important;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+.site-fairpari-casino-v3 .hub-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--fc-teal) !important;
+  box-shadow: 0 10px 28px rgba(30, 111, 255, 0.15) !important;
+}
+.site-fairpari-casino-v3 .hub-card strong { color: var(--fc-teal-bright) !important; }
+.site-fairpari-casino-v3 .hub-card span { color: var(--fc-muted); }
+
+/* Stat bars */
+.site-fairpari-casino-v3 .stat-bars-grid {
+  display: grid; gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.site-fairpari-casino-v3 .stat-bar {
+  background: rgba(21, 34, 56, 0.85);
+  border: 1px solid var(--fc-border-gold);
+  border-left: 4px solid var(--fc-teal);
+  border-radius: var(--fc-radius);
+  padding: 1rem 1.15rem;
+}
+.site-fairpari-casino-v3 .stat-bar__head {
+  display: flex; justify-content: space-between; align-items: baseline;
+  margin-bottom: 0.6rem; font-size: 0.88rem; color: var(--fc-muted);
+}
+.site-fairpari-casino-v3 .stat-bar__head strong { color: var(--fc-gold-bright); font-size: 1.12rem; }
+.site-fairpari-casino-v3 .stat-bar__track {
+  height: 7px; background: rgba(11, 21, 40, 0.9);
+  border-radius: 999px; overflow: hidden;
+}
+.site-fairpari-casino-v3 .stat-bar__fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--fc-teal), var(--fc-gold));
+  border-radius: 999px; box-shadow: 0 0 10px var(--fc-teal-glow);
+  transition: width 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Promo blocks */
+.site-fairpari-casino-v3 .promo-blocks-grid {
+  display: grid; gap: 0.85rem;
+  grid-template-columns: repeat(2, 1fr); margin-top: 1rem;
+}
+.site-fairpari-casino-v3 .promo-block {
+  position: relative; border-radius: var(--fc-radius);
+  overflow: hidden; min-height: 152px;
+  border: 1px solid var(--fc-border-gold); box-shadow: var(--fc-shadow);
+}
+.site-fairpari-casino-v3 .promo-blocks-grid .promo-block:first-child:nth-last-child(5) { grid-column: 1 / -1; }
+.site-fairpari-casino-v3 .promo-block__bg {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: center right;
+}
+.site-fairpari-casino-v3 .promo-block__content {
+  position: relative; z-index: 1;
+  display: flex; flex-direction: column; justify-content: center;
+  min-height: 152px; padding: 1rem 1.2rem; max-width: 74%;
+  background: linear-gradient(105deg, rgba(11, 21, 40, 0.97) 0%, rgba(21, 34, 56, 0.78) 58%, transparent 100%);
+}
+.site-fairpari-casino-v3 .promo-block__cta { margin-top: auto; align-self: flex-start; }
+.site-fairpari-casino-v3 .promo-block__tag {
+  display: inline-block; font-size: 0.65rem; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--fc-plum); background: var(--fc-gold);
+  padding: 0.2rem 0.55rem; border-radius: 4px; margin-bottom: 0.4rem;
+}
+.site-fairpari-casino-v3 .promo-block__title {
+  margin: 0; font-size: clamp(1rem, 2.2vw, 1.32rem);
+  color: var(--fc-ink); font-weight: 800; line-height: 1.2;
+}
+.site-fairpari-casino-v3 .promo-block__sub {
+  margin: 0.3rem 0 0.65rem; color: var(--fc-muted); font-size: 0.82rem;
+}
+
+/* Section banners */
+.site-fairpari-casino-v3 .section-banner {
+  border-radius: var(--fc-radius-lg); overflow: hidden;
+  border: 1px solid var(--fc-border-teal);
+}
+.site-fairpari-casino-v3 .section-banner__tag {
+  background: var(--fc-coral) !important; color: var(--fc-plum) !important; font-weight: 800;
+}
+.site-fairpari-casino-v3 .section-banner__title { color: var(--fc-ink); }
+.site-fairpari-casino-v3 .section-banner--hero { border-color: var(--fc-border-gold); }
+.site-fairpari-casino-v3 .section-banner--inline {
+  margin: 1.25rem 0; border-left: 4px solid var(--fc-teal);
+}
+
+/* SEO blocks */
+.site-fairpari-casino-v3 .seo-block { padding: 1.5rem 0; border-bottom: 1px solid var(--fc-border); }
+.site-fairpari-casino-v3 .seo-block--rich {
+  background: linear-gradient(135deg, rgba(21, 34, 56, 0.5), transparent);
+  border-radius: var(--fc-radius); padding: 1.25rem 1.35rem; margin: 1rem 0;
+  border: 1px solid var(--fc-border);
+}
+.site-fairpari-casino-v3 .seo-block h2 { color: var(--fc-ink); font-size: clamp(1.15rem, 2.5vw, 1.45rem); }
+.site-fairpari-casino-v3 .seo-block h2::before { content: "◆"; color: var(--fc-teal); margin-right: 0.45rem; font-size: 0.75em; }
+.site-fairpari-casino-v3 .seo-block p,
+.site-fairpari-casino-v3 .seo-block--rich p {
+  line-height: 1.7; color: var(--fc-muted); margin: 0 0 0.9rem;
+}
+.site-fairpari-casino-v3 .seo-block strong,
+.site-fairpari-casino-v3 .seo-block--rich strong,
+.site-fairpari-casino-v3 .seo-block b {
+  color: var(--fc-teal-bright); font-weight: 700;
+}
+.site-fairpari-casino-v3 .seo-list li::marker { color: var(--fc-gold); }
+.site-fairpari-casino-v3 .seo-list li strong { color: var(--fc-gold-bright); }
+
+/* Section headers — centered */
+.site-fairpari-casino-v3 .section__header {
+  text-align: center; margin-inline: auto; max-width: 48rem;
+}
+.site-fairpari-casino-v3 .section__subtitle { margin-inline: auto; }
+.site-fairpari-casino-v3 .section__header--compact {
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.25rem;
+}
+.site-fairpari-casino-v3 .section--stats {
+  position: relative;
+  z-index: 1;
+}
+
+/* Info cards */
+.site-fairpari-casino-v3 .info-card-grid {
+  display: grid; gap: 0.85rem; margin: 1.25rem 0;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.site-fairpari-casino-v3 .info-card-grid--3 { grid-template-columns: repeat(3, 1fr); }
+.site-fairpari-casino-v3 .info-card {
+  padding: 1.1rem 1.15rem; border-radius: var(--fc-radius);
+  background: linear-gradient(160deg, rgba(38, 24, 51, 0.9), rgba(11, 21, 40, 0.95));
+  border: 1px solid var(--fc-border-teal);
+  text-align: center;
+  transition: transform 0.2s, border-color 0.2s;
+}
+.site-fairpari-casino-v3 .info-card:hover {
+  transform: translateY(-2px); border-color: var(--fc-teal);
+}
+.site-fairpari-casino-v3 .info-card__icon {
+  font-size: 1.75rem; margin-bottom: 0.5rem;
+  width: 2.5rem; height: 2.5rem; margin-inline: auto;
+  display: grid; place-items: center;
+  background: var(--fc-teal-dim); border-radius: 10px;
+}
+.site-fairpari-casino-v3 .info-card__title {
+  margin: 0 0 0.4rem; font-size: 0.95rem; font-weight: 700;
+  color: var(--fc-teal-bright);
+}
+.site-fairpari-casino-v3 .info-card__text {
+  margin: 0; font-size: 0.85rem; line-height: 1.5; color: var(--fc-muted);
+}
+
+/* Highlight panel */
+.site-fairpari-casino-v3 .highlight-panel {
+  display: grid; gap: 0.5rem; margin: 1rem 0;
+  padding: 1rem; border-radius: var(--fc-radius);
+  background: rgba(21, 34, 56, 0.6); border: 1px solid var(--fc-border);
+}
+.site-fairpari-casino-v3 .highlight-row {
+  display: flex; align-items: flex-start; gap: 0.6rem;
+  padding: 0.55rem 0.65rem; border-radius: 8px;
+  background: var(--fc-teal-dim);
+}
+.site-fairpari-casino-v3 .highlight-row__mark {
+  color: var(--fc-teal-bright); font-weight: 800; flex-shrink: 0;
+}
+.site-fairpari-casino-v3 .highlight-row__text { font-size: 0.88rem; line-height: 1.5; color: var(--fc-ink); }
+
+/* Step flow */
+.site-fairpari-casino-v3 .step-flow {
+  list-style: none; margin: 1.25rem 0; padding: 0;
+  display: flex; flex-direction: column; gap: 0.65rem;
+}
+.site-fairpari-casino-v3 .step-flow__item {
+  display: flex; align-items: flex-start; gap: 0.75rem;
+  padding: 0.8rem 1rem; border-radius: var(--fc-radius);
+  background: rgba(30, 111, 255, 0.08); border-left: 3px solid var(--fc-teal);
+}
+.site-fairpari-casino-v3 .step-flow__num {
+  flex-shrink: 0; width: 1.75rem; height: 1.75rem;
+  display: grid; place-items: center; border-radius: 50%;
+  background: var(--fc-teal); color: var(--fc-plum); font-weight: 800; font-size: 0.8rem;
+}
+.site-fairpari-casino-v3 .step-flow__text { font-size: 0.9rem; line-height: 1.55; color: var(--fc-ink); }
+
+/* Related links grid */
+.site-fairpari-casino-v3 .related-links-grid {
+  display: grid; gap: 0.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  margin: 1rem 0;
+}
+.site-fairpari-casino-v3 .related-link {
+  display: flex; flex-direction: column; gap: 0.25rem;
+  padding: 1rem 1.1rem; text-decoration: none;
+  background: linear-gradient(160deg, rgba(38, 24, 51, 0.92), rgba(11, 21, 40, 0.98));
+  border: 1px solid var(--fc-border-teal); border-radius: var(--fc-radius);
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+.site-fairpari-casino-v3 .related-link:hover {
+  transform: translateY(-2px); border-color: var(--fc-teal);
+  box-shadow: 0 8px 24px rgba(30, 111, 255, 0.15);
+}
+.site-fairpari-casino-v3 .related-link strong {
+  color: var(--fc-teal-bright); font-size: 0.95rem;
+}
+.site-fairpari-casino-v3 .related-link span {
+  font-size: 0.8rem; color: var(--fc-muted); line-height: 1.45;
+}
+
+/* Game tabs */
+.site-fairpari-casino-v3 .section--game-tabs .game-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.65rem;
+  margin: 1rem 0;
+}
+.site-fairpari-casino-v3 .game-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  min-height: 5.5rem;
+  padding: 0.85rem 0.5rem;
+  text-decoration: none;
+  text-align: center;
+  background: rgba(21, 34, 56, 0.8);
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius);
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+}
+.site-fairpari-casino-v3 .game-tab:hover {
+  border-color: var(--fc-gold);
+  background: var(--fc-gold-dim);
+  transform: translateY(-1px);
+}
+.site-fairpari-casino-v3 .game-tab__ico { font-size: 1.45rem; line-height: 1; }
+.site-fairpari-casino-v3 .game-tab__lbl {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--fc-ink);
+  line-height: 1.25;
+}
+
+/* Tab panels (if used) */
+.site-fairpari-casino-v3 .game-tabs__nav {
+.site-fairpari-casino-v3 .trust-meter__row { margin-bottom: 0.65rem; }
+.site-fairpari-casino-v3 .trust-meter__head {
+  display: flex; justify-content: space-between; margin-bottom: 0.35rem;
+  font-size: 0.85rem;
+}
+.site-fairpari-casino-v3 .trust-meter__head strong { color: var(--fc-gold-bright); }
+.site-fairpari-casino-v3 .trust-meter__track {
+  height: 8px; border-radius: 4px; background: rgba(11, 21, 40, 0.9); overflow: hidden;
+}
+.site-fairpari-casino-v3 .trust-meter__fill {
+  height: 100%; border-radius: 4px;
+  background: linear-gradient(90deg, var(--fc-teal), var(--fc-gold));
+  box-shadow: 0 0 8px var(--fc-teal-glow);
+}
+
+/* Table cards in SEO */
+.site-fairpari-casino-v3 .table-card--rich {
+  margin: 1rem 0; border-radius: var(--fc-radius);
+  border: 1px solid var(--fc-border-teal); overflow: hidden;
+}
+.site-fairpari-casino-v3 .data-table th {
+  background: var(--fc-teal-dim) !important; color: var(--fc-teal-bright) !important;
+}
+.site-fairpari-casino-v3 .data-table td { color: var(--fc-ink); }
+.site-fairpari-casino-v3 .data-table td:first-child { font-weight: 600; color: var(--fc-gold-bright); }
+
+/* Winner cards — gradient border */
+.site-fairpari-casino-v3 .winners-grid {
+  display: grid; gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.site-fairpari-casino-v3 .winner-card {
+  position: relative; background: var(--fc-plum-mid);
+  border-radius: var(--fc-radius); padding: 1.15rem 1.2rem;
+  box-shadow: var(--fc-shadow);
+}
+.site-fairpari-casino-v3 .winner-card::before {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1px;
+  background: linear-gradient(135deg, var(--fc-teal), var(--fc-gold) 50%, var(--fc-coral));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none;
+}
+.site-fairpari-casino-v3 .winner-card__avatar {
+  background: linear-gradient(135deg, var(--fc-teal-dim), var(--fc-gold-dim)) !important;
+  border: 2px solid var(--fc-teal) !important; color: var(--fc-teal-bright) !important;
+}
+.site-fairpari-casino-v3 .winner-card__win { color: var(--fc-gold-bright) !important; font-weight: 800; }
+.site-fairpari-casino-v3 .winner-card__story { color: var(--fc-muted); font-size: 0.88rem; }
+.site-fairpari-casino-v3 .winner-card__ig { color: var(--fc-teal-bright); text-decoration: none; }
+.site-fairpari-casino-v3 .winner-card__ig:hover { color: var(--fc-coral); }
+
+/* Bonus calculator */
+.site-fairpari-casino-v3 .bonus-calc {
+  background: linear-gradient(160deg, rgba(38, 24, 51, 0.92), rgba(11, 21, 40, 0.96));
+  border: 1px solid var(--fc-border-gold);
+  border-radius: var(--fc-radius-lg); padding: 1.35rem 1.5rem;
+  box-shadow: 0 0 48px rgba(30, 111, 255, 0.12);
+}
+.site-fairpari-casino-v3 .bonus-calc__title { margin: 0 0 1rem; font-size: 1.15rem; color: var(--fc-gold-bright); }
+.site-fairpari-casino-v3 .bonus-calc__row {
+  display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: flex-end; margin-bottom: 1rem;
+}
+.site-fairpari-casino-v3 .bonus-calc__field label {
+  display: block; font-size: 0.78rem; color: var(--fc-muted);
+  margin-bottom: 0.35rem; text-transform: uppercase; letter-spacing: 0.06em;
+}
+.site-fairpari-casino-v3 .bonus-calc__field input,
+.site-fairpari-casino-v3 .bonus-calc__field select {
+  width: 100%; min-width: 140px; padding: 0.55rem 0.75rem;
+  background: rgba(11, 21, 40, 0.8); border: 1px solid var(--fc-border-teal);
+  border-radius: 8px; color: var(--fc-ink); font-size: 0.95rem;
+}
+.site-fairpari-casino-v3 .bonus-calc__result {
+  display: flex; align-items: baseline; gap: 0.5rem;
+  padding: 0.85rem 1rem; background: var(--fc-teal-dim);
+  border-radius: 10px; border: 1px solid var(--fc-border-teal);
+}
+.site-fairpari-casino-v3 .bonus-calc__result-label { font-size: 0.82rem; color: var(--fc-muted); }
+.site-fairpari-casino-v3 .bonus-calc__result-value { font-size: 1.35rem; font-weight: 800; color: var(--fc-teal-bright); }
+
+/* Related links */
+.site-fairpari-casino-v3 .related-links {
+  display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.25rem 0; padding: 0; list-style: none;
+}
+.site-fairpari-casino-v3 .related-links a {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  padding: 0.45rem 0.85rem; font-size: 0.82rem; font-weight: 600;
+  color: var(--fc-ink); text-decoration: none;
+  background: rgba(21, 34, 56, 0.8); border: 1px solid var(--fc-border);
+  border-radius: 999px; transition: border-color 0.2s, background 0.2s;
+}
+.site-fairpari-casino-v3 .related-links a::before { content: "→"; color: var(--fc-teal); font-size: 0.75rem; }
+.site-fairpari-casino-v3 .related-links a:hover {
+  border-color: var(--fc-teal); background: var(--fc-teal-dim); color: var(--fc-teal-bright);
+}
+
+/* Trust meter */
+.site-fairpari-casino-v3 .trust-meter {
+  display: grid; gap: 0.65rem; padding: 1.15rem 1.25rem;
+  background: rgba(21, 34, 56, 0.7);
+  border: 1px solid var(--fc-border-teal); border-radius: var(--fc-radius);
+}
+.site-fairpari-casino-v3 .trust-meter__head { display: flex; justify-content: space-between; align-items: center; }
+.site-fairpari-casino-v3 .trust-meter__label { font-size: 0.85rem; font-weight: 600; color: var(--fc-ink); }
+.site-fairpari-casino-v3 .trust-meter__score { font-size: 1.25rem; font-weight: 800; color: var(--fc-gold-bright); }
+.site-fairpari-casino-v3 .trust-meter__track { display: flex; gap: 3px; height: 10px; }
+.site-fairpari-casino-v3 .trust-meter__segment {
+  flex: 1; border-radius: 3px; background: rgba(11, 21, 40, 0.9); transition: background 0.3s;
+}
+.site-fairpari-casino-v3 .trust-meter__segment.is-filled {
+  background: linear-gradient(180deg, var(--fc-teal-bright), var(--fc-teal));
+  box-shadow: 0 0 6px var(--fc-teal-glow);
+}
+.site-fairpari-casino-v3 .trust-meter__segment.is-filled:nth-child(n+8) {
+  background: linear-gradient(180deg, var(--fc-gold-bright), var(--fc-gold));
+}
+.site-fairpari-casino-v3 .trust-meter__caption { font-size: 0.75rem; color: var(--fc-muted); }
+
+/* Reveal on scroll */
+.site-fairpari-casino-v3 .reveal-on-scroll {
+  opacity: 0; transform: translateY(24px);
+  transition: opacity 0.55s ease, transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.site-fairpari-casino-v3 .reveal-on-scroll.is-visible { opacity: 1; transform: translateY(0); }
+.site-fairpari-casino-v3 .reveal-on-scroll--delay-1 { transition-delay: 0.1s; }
+.site-fairpari-casino-v3 .reveal-on-scroll--delay-2 { transition-delay: 0.2s; }
+.site-fairpari-casino-v3 .reveal-on-scroll--delay-3 { transition-delay: 0.3s; }
+
+/* Game tabs */
+.site-fairpari-casino-v3 .game-tabs { margin: 1.25rem 0; }
+.site-fairpari-casino-v3 .game-tabs__nav {
+  display: flex; flex-wrap: wrap; gap: 0.35rem;
+  padding-bottom: 0.65rem; border-bottom: 1px solid var(--fc-border); margin-bottom: 1rem;
+}
+.site-fairpari-casino-v3 .game-tabs__btn {
+  padding: 0.5rem 1rem; font-size: 0.85rem; font-weight: 600;
+  color: var(--fc-muted); background: transparent; border: 1px solid transparent;
+  border-radius: 999px; cursor: pointer; transition: color 0.2s, background 0.2s;
+}
+.site-fairpari-casino-v3 .game-tabs__btn:hover { color: var(--fc-ink); background: var(--fc-teal-dim); }
+.site-fairpari-casino-v3 .game-tabs__btn.is-active {
+  color: var(--fc-plum); background: var(--fc-teal);
+  box-shadow: 0 4px 16px var(--fc-teal-glow);
+}
+.site-fairpari-casino-v3 .game-tabs__panel { display: none; }
+.site-fairpari-casino-v3 .game-tabs__panel.is-active { display: block; animation: fc-tab-in 0.35s ease; }
+@keyframes fc-tab-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Compare infographic */
+.site-fairpari-casino-v3 .compare-infographic {
+  display: grid; grid-template-columns: 1fr auto 1fr; gap: 0.75rem;
+  align-items: stretch; margin: 1.5rem 0; padding: 1.25rem;
+  background: rgba(21, 34, 56, 0.6); border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius-lg);
+}
+.site-fairpari-casino-v3 .compare-infographic__col { padding: 1rem; border-radius: var(--fc-radius); text-align: center; }
+.site-fairpari-casino-v3 .compare-infographic__col--us {
+  background: linear-gradient(180deg, var(--fc-teal-dim), transparent);
+  border: 1px solid var(--fc-border-teal);
+}
+.site-fairpari-casino-v3 .compare-infographic__col--them {
+  background: rgba(11, 21, 40, 0.6); border: 1px solid var(--fc-border); opacity: 0.85;
+}
+.site-fairpari-casino-v3 .compare-infographic__vs {
+  display: flex; align-items: center; justify-content: center;
+  width: 2.5rem; height: 2.5rem; align-self: center;
+  font-size: 0.72rem; font-weight: 800; color: var(--fc-plum);
+  background: var(--fc-coral); border-radius: 50%; flex-shrink: 0;
+}
+.site-fairpari-casino-v3 .compare-infographic__title { margin: 0 0 0.5rem; font-size: 0.95rem; font-weight: 700; }
+.site-fairpari-casino-v3 .compare-infographic__stat { font-size: 1.5rem; font-weight: 800; color: var(--fc-gold-bright); }
+.site-fairpari-casino-v3 .compare-infographic__note { margin: 0.35rem 0 0; font-size: 0.78rem; color: var(--fc-muted); }
+
+/* Sticky CTA — fairpari-betting.com style: full-width bottom bar */
+.site-fairpari-casino-v3 .sticky-cta,
+.site-fairpari-casino-v3 .sticky-cta--dock {
+  position: fixed !important;
+  top: auto !important;
+  left: 20px !important;
+  right: 20px !important;
+  bottom: 16px !important;
+  transform: none !important;
+  width: auto !important;
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  z-index: 9999 !important;
+  background: none !important;
+}
+.site-fairpari-casino-v3 .sticky-cta--dock.is-hidden {
+  transform: translateY(calc(100% + 1.5rem)) !important;
+  opacity: 0;
+  pointer-events: none;
+}
+.site-fairpari-casino-v3 .sticky-cta__icon {
+  flex: 0 0 auto; font-size: 1.25rem; line-height: 1;
+  width: 2rem; height: 2rem;
+  display: flex; align-items: center; justify-content: center;
+}
+.site-fairpari-casino-v3 .sticky-cta__panel {
+  display: flex !important; flex-direction: row !important; align-items: center !important;
+  justify-content: space-between !important;
+  gap: 0.75rem !important; padding: 14px 20px !important;
+  border-radius: 16px !important;
+  border: 1px solid rgba(30, 111, 255, 0.35) !important;
+  background: #152238 !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55) !important;
+  width: 100% !important;
+  grid-template-columns: unset !important;
+  backdrop-filter: none !important;
+}
+.site-fairpari-casino-v3 .sticky-cta__text {
+  flex: 1 1 auto; min-width: 0; margin: 0 !important;
+  font-size: 0.88rem !important; color: var(--fc-ink) !important;
+  text-align: left !important; font-weight: 600;
+}
+.site-fairpari-casino-v3 .sticky-cta__prefix { display: inline; font-size: 0.88rem; color: var(--fc-ink); margin-right: 0.35rem; }
+.site-fairpari-casino-v3 .sticky-cta__highlight {
+  display: inline !important; color: var(--fc-gold-bright) !important;
+  font-weight: 800 !important; font-size: 0.88rem !important;
+}
+.site-fairpari-casino-v3 .sticky-cta__btn {
+  flex-shrink: 0; padding: 0.55rem 1rem !important; font-size: 0.82rem !important;
+  background: linear-gradient(135deg, #1e6fff, #1554c7) !important;
+  color: #fff !important; border: none !important; white-space: nowrap;
+  font-weight: 700 !important; border-radius: 10px !important;
+}
+.site-fairpari-casino-v3 .sticky-cta__close {
+  flex-shrink: 0; width: 28px; height: 28px; border: none; border-radius: 50%;
+  background: rgba(255,255,255,0.08); color: var(--fc-muted); font-size: 1.1rem;
+  cursor: pointer; line-height: 1; padding: 0;
+}
+.site-fairpari-casino-v3.has-sticky-cta .back-to-top.is-visible {
+  bottom: calc(5.5rem + env(safe-area-inset-bottom));
+}
+body.site-casino.site-fairpari-casino-v3.has-sticky-cta .site-copyright {
+  padding-bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px));
+}
+body.site-casino.site-fairpari-casino-v3.has-sticky-cta {
+  padding-bottom: 90px;
+}
+@media (max-width: 640px) {
+  .site-fairpari-casino-v3 .sticky-cta--dock {
+    left: 8px !important;
+    right: 8px !important;
+    bottom: max(8px, env(safe-area-inset-bottom)) !important;
+  }
+  .site-fairpari-casino-v3 .sticky-cta__panel {
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    text-align: left !important;
+    gap: 0.5rem !important;
+    padding: 10px 12px !important;
+  }
+  .site-fairpari-casino-v3 .sticky-cta__text {
+    text-align: left !important;
+    flex: 1 1 auto !important;
+    min-width: 0;
+    font-size: 0.78rem !important;
+  }
+  .site-fairpari-casino-v3 .sticky-cta__prefix { display: none; }
+  .site-fairpari-casino-v3 .sticky-cta__highlight { font-size: 0.78rem !important; }
+  .site-fairpari-casino-v3 .sticky-cta__btn {
+    width: auto !important;
+    padding: 0.45rem 0.75rem !important;
+    font-size: 0.75rem !important;
+  }
+  .site-fairpari-casino-v3 .sticky-cta__close { width: 24px; height: 24px; }
+}
+
+/* Focus states */
+.site-fairpari-casino-v3 a:focus-visible,
+.site-fairpari-casino-v3 button:focus-visible,
+.site-fairpari-casino-v3 input:focus-visible,
+.site-fairpari-casino-v3 select:focus-visible {
+  outline: 2px solid var(--fc-teal-bright); outline-offset: 2px;
+}
+.site-fairpari-casino-v3 .hub-card:focus-visible { outline: 2px solid var(--fc-gold); outline-offset: 3px; }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .site-fairpari-casino-v3 .reveal-on-scroll { opacity: 1; transform: none; transition: none; }
+  .site-fairpari-casino-v3 .stat-bar__fill,
+  .site-fairpari-casino-v3 .scroll-progress__bar,
+  .site-fairpari-casino-v3 .game-tabs__panel.is-active { transition: none; animation: none; }
+  .site-fairpari-casino-v3 .hub-card:hover { transform: none; }
+}
+
+/* Mobile 768px */
+@media (max-width: 768px) {
+  .site-fairpari-casino-v3 .hero__slide-inner--split {
+    grid-template-columns: 1fr !important;
+    padding: 1.5rem 1rem !important;
+  }
+  .site-fairpari-casino-v3 .hero__copy { text-align: center; }
+  .site-fairpari-casino-v3 .hero__actions { justify-content: center !important; }
+  .site-fairpari-casino-v3 .section-banner--hero {
+    min-height: clamp(120px, 32vw, 180px) !important;
+  }
+  .site-fairpari-casino-v3 .hero__title { font-size: clamp(1.5rem, 6vw, 2rem) !important; }
+  .site-fairpari-casino-v3 .game-tabs { grid-template-columns: repeat(2, 1fr); }
+  .site-fairpari-casino-v3 .info-card-grid--3 { grid-template-columns: 1fr; }
+  .site-fairpari-casino-v3 .promo-blocks-grid { grid-template-columns: 1fr; }
+  .site-fairpari-casino-v3 .promo-block__content { max-width: 100%; }
+  .site-fairpari-casino-v3 .compare-infographic { grid-template-columns: 1fr; }
+  .site-fairpari-casino-v3 .compare-infographic__vs { margin: 0 auto; }
+  .site-fairpari-casino-v3 .bonus-calc__row { flex-direction: column; align-items: stretch; }
+  .site-fairpari-casino-v3 .sticky-cta__panel { flex-wrap: nowrap !important; }
+  .site-fairpari-casino-v3 .sticky-cta__btn { width: auto; }
+  .site-fairpari-casino-v3 .section--game-tabs .game-tabs { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Mobile 480px */
+@media (max-width: 480px) {
+  .site-fairpari-casino-v3 .stat-bars-grid,
+  .site-fairpari-casino-v3 .winners-grid { grid-template-columns: 1fr; }
+  .site-fairpari-casino-v3 .seo-block--rich,
+  .site-fairpari-casino-v3 .bonus-calc { padding: 1rem; }
+  .site-fairpari-casino-v3 .related-links-grid { grid-template-columns: 1fr; }
+  .site-fairpari-casino-v3 .sticky-cta__icon { display: none; }
+  .site-fairpari-casino-v3 .info-card-grid { grid-template-columns: 1fr !important; }
+}
+
+/* ═══ Layout stability & base components (v3.1) ═══ */
+.site-casino.site-fairpari-casino-v3 {
+  overflow-x: clip;
+}
+.site-fairpari-casino-v3 .container {
+  width: min(100% - 2rem, var(--max, 1200px));
+  margin-inline: auto;
+  padding-inline: 0;
+}
+.site-fairpari-casino-v3 img,
+.site-fairpari-casino-v3 video {
+  max-width: 100%;
+  height: auto;
+}
+.site-fairpari-casino-v3 .table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.site-fairpari-casino-v3 .data-table {
+  width: 100%;
+  min-width: 280px;
+  border-collapse: collapse;
+}
+.site-fairpari-casino-v3 .data-table th,
+.site-fairpari-casino-v3 .data-table td {
+  padding: 0.65rem 0.85rem;
+  vertical-align: top;
+  line-height: 1.45;
+  word-break: break-word;
+}
+.site-fairpari-casino-v3 .data-table-wrap {
+  overflow-x: auto;
+  margin: 1rem 0;
+  border-radius: var(--fc-radius);
+  border: 1px solid var(--fc-border-teal);
+}
+
+/* Stats strip under hero */
+.site-fairpari-casino-v3 .stats-bar--cards {
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+}
+@media (min-width: 640px) {
+  .site-fairpari-casino-v3 .stats-bar--cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .site-fairpari-casino-v3 .stats-bar--cards {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+.site-fairpari-casino-v3 .stats-bar--cards .stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 5.5rem;
+  padding: 0.85rem 0.65rem;
+  background: rgba(21, 34, 56, 0.85);
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius);
+  text-align: center;
+}
+.site-fairpari-casino-v3 .stats-bar--cards .stat-item__icon {
+  font-size: 1.35rem;
+  margin-bottom: 0.25rem;
+  line-height: 1;
+}
+.site-fairpari-casino-v3 .stats-bar--cards .stat-item__value {
+  display: block;
+  font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+  font-weight: 800;
+  color: var(--fc-gold-bright);
+  line-height: 1.2;
+}
+.site-fairpari-casino-v3 .stats-bar--cards .stat-item__label {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.62rem;
+  line-height: 1.35;
+  color: var(--fc-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  max-width: 12rem;
+}
+
+/* Features grid */
+.site-fairpari-casino-v3 .features-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 1fr;
+  margin: 1.25rem 0;
+}
+@media (min-width: 640px) {
+  .site-fairpari-casino-v3 .features-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+  .site-fairpari-casino-v3 .features-grid { grid-template-columns: repeat(4, 1fr); }
+}
+.site-fairpari-casino-v3 .feature-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 6.5rem;
+  padding: 1rem 1.05rem;
+  background: rgba(21, 34, 56, 0.9);
+  border: 1px solid var(--fc-border-teal);
+  border-radius: var(--fc-radius);
+  transition: border-color 0.2s, transform 0.2s;
+}
+.site-fairpari-casino-v3 .feature-card:hover {
+  border-color: var(--fc-teal);
+  transform: translateY(-2px);
+}
+.site-fairpari-casino-v3 .feature-card__title {
+  margin: 0 0 0.4rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--fc-teal-bright);
+  line-height: 1.35;
+}
+.site-fairpari-casino-v3 .feature-card__text {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--fc-muted);
+  flex: 1;
+}
+.site-fairpari-casino-v3 .feature-card__icon { display: none; }
+
+/* Section intro & lists */
+.site-fairpari-casino-v3 .section__intro {
+  max-width: 48rem;
+  margin: 1rem auto 0;
+  text-align: center;
+  line-height: 1.65;
+  color: var(--fc-muted);
+}
+.site-fairpari-casino-v3 .section-list {
+  margin: 1rem 0;
+  padding-left: 1.25rem;
+  line-height: 1.6;
+  color: var(--fc-muted);
+}
+.site-fairpari-casino-v3 .section-list li { margin-bottom: 0.45rem; }
+
+/* Fact chips */
+.site-fairpari-casino-v3 .fact-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+.site-fairpari-casino-v3 .fact-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.78rem;
+  color: var(--fc-ink);
+  background: rgba(21, 34, 56, 0.8);
+  border: 1px solid var(--fc-border);
+  border-radius: 999px;
+}
+
+/* Live wins ticker */
+.site-fairpari-casino-v3 .live-wins {
+  overflow: hidden;
+  max-width: 100%;
+}
+.site-fairpari-casino-v3 .live-wins__track {
+  display: flex;
+  gap: 2rem;
+  white-space: nowrap;
+}
+
+/* Hero mobile order */
+@media (max-width: 768px) {
+  .site-fairpari-casino-v3 .hero__slide-inner--split .hero__art {
+    order: -1;
+    margin-bottom: 0.5rem;
+  }
+  .site-fairpari-casino-v3 .hero__subtitle {
+    margin-inline: auto;
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+  .site-fairpari-casino-v3 .section-banner__title {
+    font-size: clamp(0.95rem, 4.5vw, 1.2rem) !important;
+  }
+}
+
+/* Nested strong fix */
+.site-fairpari-casino-v3 .seo-block strong strong {
+  font-weight: inherit;
+  color: inherit;
+}
+
+/* Multipage inline banners */
+.site-fairpari-casino-v3 .multipage-banner-gap {
+  max-width: 100%;
+  margin: 1.25rem 0;
+}
+.site-fairpari-casino-v3 .multipage-banner-gap .section-banner {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* FAQ accordion */
+.site-fairpari-casino-v3 .faq-item {
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius);
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+.site-fairpari-casino-v3 .faq-item__question {
+  width: 100%;
+  text-align: left;
+  padding: 0.9rem 1rem;
+  background: rgba(21, 34, 56, 0.6);
+  color: var(--fc-ink);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+.site-fairpari-casino-v3 .faq-item__answer {
+  padding: 0 1rem 0.9rem;
+  color: var(--fc-muted);
+  line-height: 1.6;
+}
+
+/* Welcome tiers */
+.site-fairpari-casino-v3 .welcome-tiers {
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  margin: 1rem 0;
+}
+.site-fairpari-casino-v3 .tier-card {
+  padding: 0.85rem;
+  text-align: center;
+  background: rgba(21, 34, 56, 0.85);
+  border: 1px solid var(--fc-border-gold);
+  border-radius: var(--fc-radius);
+}
+
+/* Pay infographic */
+.site-fairpari-casino-v3 .pay-infographic { margin: 1rem 0; }
+.site-fairpari-casino-v3 .pay-speed {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr 4rem;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.site-fairpari-casino-v3 .pay-speed__bar {
+  height: 8px;
+  background: rgba(11, 21, 40, 0.9);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.site-fairpari-casino-v3 .pay-speed__fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--fc-teal), var(--fc-gold));
+}
+
+/* 320px narrow phones */
+@media (max-width: 360px) {
+  .site-fairpari-casino-v3 .container { width: min(100% - 1rem, var(--max, 1200px)); }
+  .site-fairpari-casino-v3 .hero__actions { flex-direction: column; width: 100%; }
+  .site-fairpari-casino-v3 .hero__actions .btn { width: 100%; }
+  .site-fairpari-casino-v3 .sticky-cta--dock { width: calc(100% - 0.5rem) !important; }
+}
+
+/* ═══ v3.2 Desktop layout pass ═══ */
+.site-fairpari-casino-v3 .breadcrumbs {
+  color: var(--fc-muted);
+  opacity: 1;
+  padding: 1rem 0 0;
+  max-width: min(100% - 2rem, var(--max, 1200px));
+  margin-inline: auto;
+  font-size: 0.88rem;
+}
+.site-fairpari-casino-v3 .breadcrumbs a {
+  color: var(--fc-teal-bright);
+  text-decoration: none;
+}
+.site-fairpari-casino-v3 .breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.site-fairpari-casino-v3 .hero--page .hero__banner {
+  max-width: 100% !important;
+  margin-inline: auto !important;
+}
+.site-fairpari-casino-v3 .hero--page .section-banner__caption {
+  display: none;
+}
+.site-fairpari-casino-v3 .hero--page .hero__actions .btn--ghost {
+  border-color: var(--fc-border-teal) !important;
+  background: rgba(30, 111, 255, 0.08) !important;
+  color: var(--fc-teal-bright) !important;
+}
+
+.site-fairpari-casino-v3 .section-hero-shot {
+  max-width: min(880px, 100%);
+  margin-inline: auto;
+  width: 100%;
+}
+
+.site-fairpari-casino-v3 .seo-block--rich > p,
+.site-fairpari-casino-v3 .seo-block--rich > ul,
+.site-fairpari-casino-v3 .seo-block--rich > ol {
+  max-width: 68ch;
+}
+.site-fairpari-casino-v3 .seo-block--rich .highlight-panel,
+.site-fairpari-casino-v3 .seo-block--rich .info-card-grid,
+.site-fairpari-casino-v3 .seo-block--rich .table-card,
+.site-fairpari-casino-v3 .seo-block--rich .data-table-wrap,
+.site-fairpari-casino-v3 .seo-block--rich .multipage-banner-gap {
+  max-width: 100%;
+}
+
+.site-fairpari-casino-v3 .highlight-row {
+  min-height: 3.5rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .site-fairpari-casino-v3 .highlight-panel {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.65rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-fairpari-casino-v3 .stat-bars-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  .site-fairpari-casino-v3 .stat-bar {
+    min-height: 5.5rem;
+  }
+  .site-fairpari-casino-v3 .promo-blocks-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .site-fairpari-casino-v3 .promo-block {
+    min-height: 200px;
+  }
+  .site-fairpari-casino-v3 .promo-block__content {
+    min-height: 200px;
+    max-width: 78%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .site-fairpari-casino-v3 .hero--page .hero__slide-inner--split {
+    grid-template-columns: 1.1fr 0.9fr !important;
+    padding: 2rem 0 !important;
+    gap: 2.5rem !important;
+  }
+  .site-fairpari-casino-v3 .highlight-panel:has(.highlight-row:nth-child(4):last-child) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .site-fairpari-casino-v3 .highlight-panel:has(.highlight-row:nth-child(5)) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

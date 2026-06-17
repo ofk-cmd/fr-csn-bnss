@@ -1,0 +1,2 @@
+Domain: fairpari-casino-bonuses.com
+http://localhost:8766/

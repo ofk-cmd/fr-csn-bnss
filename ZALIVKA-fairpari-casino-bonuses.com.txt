@@ -1,0 +1,12 @@
+Домен: fairpari-casino-bonuses.com
+Сборка: 2026-06-17 (multipage uz/ru/en, light theme)
+
+Локальная проверка:
+  cd /Users/vv/Desktop/fairpari-casino-bonuses
+  python3 -m http.server 8766
+
+URL: http://localhost:8766/
+RU:  http://localhost:8766/ru/
+EN:  http://localhost:8766/en/
+
+Архив: ~/Desktop/fairpari-casino-bonuses-com-last.zip
