@@ -1,0 +1,1656 @@
+/* dawo.uz v2 — FairPari official: navy #0b1528 · lime #b8ff00 · blue #1e6fff */
+
+.site-dawo.site-fairpari-official {
+  --fp-navy: #0b1528;
+  --fp-navy-mid: #152238;
+  --fp-navy-light: #1e3354;
+  --fp-lime: #b8ff00;
+  --fp-lime-dim: rgba(184, 255, 0, 0.12);
+  --fp-blue: #1e6fff;
+  --fp-ink: #f1f5f9;
+  --fp-muted: #94a3b8;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(30, 111, 255, 0.15), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(184, 255, 0, 0.06), transparent),
+    var(--fp-navy);
+}
+
+.site-dawo .site-header {
+  background: rgba(11, 21, 40, 0.92) !important;
+  border-bottom: 1px solid rgba(184, 255, 0, 0.15) !important;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+}
+
+.site-dawo .brand__logo-img {
+  filter: drop-shadow(0 0 12px rgba(184, 255, 0, 0.25));
+}
+
+.site-dawo .hero__banner,
+.site-dawo .hero--page .hero__banner {
+  background:
+    linear-gradient(135deg, rgba(11, 21, 40, 0.95) 0%, rgba(21, 34, 56, 0.9) 50%, rgba(11, 21, 40, 0.98) 100%) !important;
+  border: 1px solid rgba(184, 255, 0, 0.2) !important;
+  border-radius: 24px !important;
+  box-shadow:
+    0 0 0 1px rgba(30, 111, 255, 0.1),
+    0 24px 48px rgba(0, 0, 0, 0.45),
+    0 0 60px rgba(184, 255, 0, 0.06) !important;
+  overflow: hidden;
+  position: relative;
+}
+
+.site-dawo .hero__banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 40%, rgba(184, 255, 0, 0.03) 50%, transparent 60%);
+  pointer-events: none;
+}
+
+.site-dawo .hero__title {
+  background: linear-gradient(135deg, #fff 0%, var(--fp-lime) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: clamp(1.75rem, 4.5vw, 2.75rem) !important;
+}
+
+.site-dawo .section {
+  position: relative;
+}
+
+.site-dawo .section--alt {
+  background: linear-gradient(180deg, rgba(21, 34, 56, 0.6), rgba(11, 21, 40, 0.4)) !important;
+  border-block: 1px solid rgba(184, 255, 0, 0.06);
+}
+
+.site-dawo .section__eyebrow {
+  color: var(--fp-lime) !important;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.site-dawo .hub-card {
+  background: linear-gradient(145deg, rgba(21, 34, 56, 0.9), rgba(11, 21, 40, 0.95)) !important;
+  border: 1px solid rgba(184, 255, 0, 0.18) !important;
+  border-radius: 16px !important;
+  padding: 1.25rem !important;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.site-dawo .hub-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--fp-lime) !important;
+  box-shadow: 0 12px 32px rgba(184, 255, 0, 0.12) !important;
+}
+
+.site-dawo .hub-card strong {
+  color: var(--fp-lime) !important;
+  font-size: 1.05rem;
+}
+
+/* Tables */
+.site-dawo .data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(21, 34, 56, 0.85);
+  border: 1px solid rgba(184, 255, 0, 0.15);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.site-dawo .data-table--striped tbody tr:nth-child(even) td {
+  background: rgba(11, 21, 40, 0.5);
+}
+
+.site-dawo .data-table th {
+  background: rgba(184, 255, 0, 0.1) !important;
+  color: var(--fp-lime) !important;
+  font-weight: 700;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.site-dawo .data-table td {
+  padding: 0.7rem 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--fp-ink);
+}
+
+.site-dawo .data-table--compact th,
+.site-dawo .data-table--compact td {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+.site-dawo .table-card {
+  background: rgba(21, 34, 56, 0.5);
+  border: 1px solid rgba(184, 255, 0, 0.12);
+  border-radius: 18px;
+  padding: 1.25rem;
+  margin: 1rem 0;
+}
+
+.site-dawo .table-card__title {
+  margin: 0 0 1rem;
+  font-size: 1.15rem;
+  color: #fff;
+}
+
+.site-dawo .table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.site-dawo .table-card__note {
+  margin: -0.35rem 0 0.85rem;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--fp-muted);
+}
+
+.site-dawo .data-table--payments {
+  font-size: 0.82rem;
+  min-width: 640px;
+}
+
+.site-dawo .data-table--payments th,
+.site-dawo .data-table--payments td {
+  white-space: nowrap;
+}
+
+.site-dawo .data-table--payments th:nth-child(1),
+.site-dawo .data-table--payments td:nth-child(1) {
+  white-space: normal;
+  min-width: 5.5rem;
+}
+
+.site-dawo .data-table--payments th:nth-child(7),
+.site-dawo .data-table--payments td:nth-child(7) {
+  white-space: normal;
+  min-width: 6.5rem;
+}
+
+.site-dawo .highlight-panel {
+  display: grid;
+  gap: 0.55rem;
+  margin: 1rem 0;
+  padding: 1rem 1.1rem;
+  background: rgba(21, 34, 56, 0.45);
+  border: 1px solid rgba(184, 255, 0, 0.1);
+  border-radius: 14px;
+}
+
+.site-dawo .highlight-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--fp-text, #e8edf5);
+}
+
+.site-dawo .highlight-row__mark {
+  flex-shrink: 0;
+  width: 1.35rem;
+  height: 1.35rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(184, 255, 0, 0.15);
+  color: var(--fp-lime, #b8ff00);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.site-dawo .hero--page .hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.site-dawo .seo-list {
+  margin: 0.85rem 0 1rem;
+  padding-left: 1.15rem;
+  line-height: 1.55;
+}
+
+.site-dawo .seo-list li {
+  margin: 0.35rem 0;
+}
+
+.site-dawo .seo-list li::marker {
+  color: var(--fp-lime, #b8ff00);
+}
+
+/* Stat bars (pseudo-charts) */
+.site-dawo .stat-bars-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.site-dawo .stat-bar {
+  background: rgba(21, 34, 56, 0.8);
+  border: 1px solid rgba(184, 255, 0, 0.12);
+  border-radius: 14px;
+  padding: 1rem 1.15rem;
+}
+
+.site-dawo .stat-bar__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--fp-muted);
+}
+
+.site-dawo .stat-bar__head strong {
+  color: var(--fp-lime);
+  font-size: 1.1rem;
+}
+
+.site-dawo .stat-bar__track {
+  height: 8px;
+  background: rgba(11, 21, 40, 0.8);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.site-dawo .stat-bar__fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--fp-blue), var(--fp-lime));
+  border-radius: 999px;
+  transition: width 0.8s ease;
+}
+
+/* Promo blocks grid (static banners, no slider) */
+.site-dawo .promo-blocks-grid {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1rem;
+}
+
+@media (max-width: 640px) {
+  .site-dawo .promo-blocks-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.site-dawo .promo-block {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  min-height: 148px;
+  border: 1px solid rgba(184, 255, 0, 0.2);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+}
+
+.site-dawo .promo-blocks-grid .promo-block:first-child:nth-last-child(5) {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 641px) {
+  .site-dawo .promo-blocks-grid .promo-block:first-child:nth-last-child(5) {
+    grid-column: 1 / -1;
+    min-height: 168px;
+  }
+}
+
+.site-dawo .promo-block__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+  display: block;
+}
+
+.site-dawo .promo-block__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 148px;
+  padding: 1rem 1.15rem;
+  max-width: 72%;
+  background: linear-gradient(
+    100deg,
+    rgba(11, 21, 40, 0.96) 0%,
+    rgba(11, 21, 40, 0.82) 55%,
+    transparent 100%
+  );
+}
+
+.site-dawo .promo-block__tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--fp-navy);
+  background: var(--fp-lime);
+  padding: 0.18rem 0.55rem;
+  border-radius: 999px;
+  margin-bottom: 0.4rem;
+}
+
+.site-dawo .promo-block__title {
+  margin: 0;
+  font-size: clamp(1rem, 2.2vw, 1.35rem);
+  color: #fff;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.site-dawo .promo-block__sub {
+  margin: 0.25rem 0 0.6rem;
+  color: var(--fp-muted);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.site-dawo .promo-block__cta {
+  padding: 0.45rem 0.9rem;
+  font-size: 0.78rem;
+}
+
+/* Winner cards */
+.site-dawo .winners-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.site-dawo .winner-card {
+  background: linear-gradient(160deg, rgba(21, 34, 56, 0.95), rgba(11, 21, 40, 0.98));
+  border: 1px solid rgba(184, 255, 0, 0.15);
+  border-radius: 18px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.site-dawo .winner-card__head {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.site-dawo .winner-card__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--fp-blue), var(--fp-lime));
+  color: var(--fp-navy);
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+}
+
+.site-dawo .winner-card__name {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #fff;
+}
+
+.site-dawo .winner-card__meta {
+  margin: 0.15rem 0 0;
+  font-size: 0.82rem;
+  color: var(--fp-muted);
+}
+
+.site-dawo .winner-card__win {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--fp-lime);
+  text-align: right;
+  line-height: 1.2;
+}
+
+.site-dawo .winner-card__story {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--fp-ink);
+}
+
+.site-dawo .winner-card__ig {
+  font-size: 0.82rem;
+  color: var(--fp-blue);
+  text-decoration: none;
+}
+
+.site-dawo .winner-card__ig:hover {
+  color: var(--fp-lime);
+}
+
+/* SEO blocks — lists to table style */
+.site-dawo .seo-block .data-table--kv td:first-child {
+  font-weight: 600;
+  color: var(--fp-lime);
+  width: 38%;
+}
+
+/* Sticky CTA — flex layout (overrides broken mobile grid in style.css) */
+.site-dawo .sticky-cta--dock {
+  position: fixed !important;
+  z-index: 9999 !important;
+  left: max(0.5rem, env(safe-area-inset-left)) !important;
+  right: max(0.5rem, env(safe-area-inset-right)) !important;
+  bottom: max(0.5rem, env(safe-area-inset-bottom)) !important;
+  width: auto !important;
+  max-width: none !important;
+  margin: 0 !important;
+  transform: none !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+.site-dawo .sticky-cta--dock.is-hidden {
+  transform: translateY(calc(100% + 1.5rem)) !important;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.site-dawo .sticky-cta__icon {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 1;
+  width: 2rem;
+  height: 2rem;
+}
+
+.site-dawo .sticky-cta__panel {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  padding: 0.55rem 0.6rem !important;
+  border-radius: 14px !important;
+  border: 1px solid rgba(184, 255, 0, 0.35) !important;
+  background: linear-gradient(135deg, #0b1528, #152238) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.55) !important;
+  grid-template-columns: unset !important;
+  grid-template-rows: unset !important;
+  width: 100% !important;
+}
+
+.site-dawo .sticky-cta__text {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0 !important;
+  grid-column: unset !important;
+  grid-row: unset !important;
+  font-size: 0.75rem !important;
+  line-height: 1.25 !important;
+  color: #fff !important;
+}
+
+.site-dawo .sticky-cta__prefix {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--fp-muted);
+  margin: 0 0 0.12rem;
+  letter-spacing: 0.02em;
+}
+
+.site-dawo .sticky-cta__highlight {
+  display: block !important;
+  color: var(--fp-lime) !important;
+  font-size: 0.78rem !important;
+  font-weight: 800 !important;
+  margin: 0 !important;
+  line-height: 1.15 !important;
+}
+
+.site-dawo .sticky-cta__btn {
+  flex: 0 0 auto;
+  grid-column: unset !important;
+  grid-row: unset !important;
+  align-self: center !important;
+  padding: 0.42rem 0.7rem !important;
+  font-size: 0.7rem !important;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+.site-dawo .sticky-cta__close {
+  flex: 0 0 auto;
+  align-self: center !important;
+  grid-column: unset !important;
+  grid-row: unset !important;
+  width: 34px !important;
+  height: 34px !important;
+  min-width: 34px !important;
+  min-height: 34px !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #fff !important;
+  border-radius: 9px !important;
+  font-size: 1.2rem !important;
+  line-height: 1 !important;
+  cursor: pointer !important;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  padding: 0 !important;
+}
+
+.site-dawo .sticky-cta__close:hover,
+.site-dawo .sticky-cta__close:focus-visible {
+  background: rgba(184, 255, 0, 0.2) !important;
+  border-color: var(--fp-lime) !important;
+}
+
+body.site-dawo.has-sticky-cta {
+  padding-bottom: 0 !important;
+}
+
+body.site-dawo.has-sticky-cta .site-copyright {
+  padding-bottom: calc(5rem + env(safe-area-inset-bottom, 0px)) !important;
+}
+
+body.site-dawo.has-sticky-cta .back-to-top.is-visible {
+  bottom: calc(4.75rem + env(safe-area-inset-bottom, 0px)) !important;
+}
+
+@media (min-width: 520px) {
+  .site-dawo .sticky-cta--dock {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    max-width: 520px !important;
+  }
+
+  .site-dawo .sticky-cta--dock.is-hidden {
+    transform: translateX(-50%) translateY(calc(100% + 1.5rem)) !important;
+  }
+
+  .site-dawo .sticky-cta__panel {
+    padding: 0.6rem 0.75rem !important;
+    gap: 0.65rem !important;
+  }
+
+  .site-dawo .sticky-cta__text {
+    font-size: 0.8rem !important;
+  }
+
+  .site-dawo .sticky-cta__prefix {
+    display: inline;
+    margin: 0 0.25rem 0 0;
+  }
+
+  .site-dawo .sticky-cta__highlight {
+    display: inline !important;
+    font-size: 0.88rem !important;
+  }
+
+  .site-dawo .sticky-cta__btn {
+    padding: 0.48rem 0.95rem !important;
+    font-size: 0.76rem !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .site-dawo .sticky-cta__highlight {
+    font-size: 0.72rem !important;
+  }
+
+  .site-dawo .sticky-cta__btn {
+    padding: 0.38rem 0.55rem !important;
+    font-size: 0.65rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-dawo .promo-block__content {
+    max-width: 85%;
+    padding: 0.85rem 1rem;
+    min-height: 132px;
+  }
+  .site-dawo .winners-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Section banners v2 */
+.site-dawo .section-banner {
+  border: 1px solid rgba(184, 255, 0, 0.25) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35) !important;
+}
+
+.site-dawo .section-banner__tag {
+  background: var(--fp-lime-dim) !important;
+  color: var(--fp-lime) !important;
+  border-color: rgba(184, 255, 0, 0.4) !important;
+}
+
+.site-dawo .live-wins {
+  background: linear-gradient(90deg, #0b1528, #152238, #0b1528) !important;
+  border-color: rgba(184, 255, 0, 0.1) !important;
+}
+
+.site-dawo .site-footer {
+  background: #060d18 !important;
+  border-top: 2px solid rgba(184, 255, 0, 0.12) !important;
+}
+
+/* On-page table of contents (replaces menu-duplicating nav) */
+.site-dawo .page-toc.on-page-nav {
+  justify-content: flex-start;
+  max-width: none;
+  margin: 1.5rem 0 2rem;
+  padding: 1rem 1.25rem;
+  background: rgba(21, 34, 56, 0.55);
+  border: 1px solid rgba(184, 255, 0, 0.14);
+  border-radius: 16px;
+}
+
+.site-dawo .page-toc__label {
+  flex: 0 0 100%;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--fp-lime);
+  margin: 0 0 0.35rem;
+}
+
+.site-dawo .on-page-nav.page-toc a {
+  color: var(--fp-lime);
+  border-color: rgba(184, 255, 0, 0.28);
+  background: rgba(11, 21, 40, 0.65);
+}
+
+.site-dawo .on-page-nav.page-toc a:hover {
+  color: var(--fp-navy);
+  background: var(--fp-lime);
+  border-color: var(--fp-lime);
+}
+
+.site-dawo .on-page-nav.page-toc a.page-toc__hub {
+  border-color: rgba(30, 111, 255, 0.35);
+  background: rgba(30, 111, 255, 0.1);
+  color: #dbeafe;
+}
+
+.site-dawo .on-page-nav.page-toc a.page-toc__hub:hover {
+  background: var(--fp-blue);
+  border-color: var(--fp-blue);
+  color: #fff;
+}
+
+/* Hero — composite section-banner (BK promo style) */
+.site-dawo .section-banner--hero {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  min-height: 132px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.site-dawo .hero__slide-inner--split .section-banner--hero {
+  min-height: 120px;
+}
+
+.site-dawo .section-banner--hero .section-banner__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+}
+
+.site-dawo .section-banner--hero .section-banner__caption {
+  min-height: 120px;
+  padding: 0.85rem 1rem;
+}
+
+.site-dawo .hero__art:not(.section-banner--hero) img {
+  background: transparent !important;
+  object-fit: contain;
+  max-height: min(420px, 52vh);
+  width: auto;
+  max-width: 100%;
+  filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.45));
+}
+
+/* Stats bar — 20% kompakt */
+.site-dawo .stats-bar--cards {
+  gap: 0.6rem !important;
+  padding: 0.8rem !important;
+  margin: -1.2rem auto 1.2rem !important;
+  max-width: min(var(--max, 1200px), 96%) !important;
+}
+
+.site-dawo .stats-bar--cards .stat-item {
+  padding: 0.8rem !important;
+}
+
+.site-dawo .stats-bar--cards .stat-item__value {
+  font-size: 0.95rem !important;
+}
+
+.site-dawo .stats-bar--cards .stat-item__label {
+  font-size: 0.68rem !important;
+  line-height: 1.25 !important;
+}
+
+.site-dawo .stats-bar--cards .stat-item__icon {
+  font-size: 1.1rem !important;
+}
+
+/* Features — ixcham kartochkalar */
+.site-dawo #features .features-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.55rem;
+}
+
+@media (min-width: 768px) {
+  .site-dawo #features .features-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.65rem;
+  }
+}
+
+.site-dawo #features .feature-card {
+  padding: 0.7rem 0.75rem !important;
+  border-radius: 12px !important;
+}
+
+.site-dawo #features .feature-card__icon,
+.site-dawo #features .feature-card__emoji {
+  font-size: 1.15rem !important;
+}
+
+.site-dawo #features .feature-card__title {
+  font-size: 0.88rem !important;
+  margin-bottom: 0.2rem !important;
+  line-height: 1.25 !important;
+}
+
+.site-dawo #features .feature-card__text {
+  font-size: 0.78rem !important;
+  line-height: 1.4 !important;
+  color: var(--fp-muted) !important;
+  margin: 0 !important;
+}
+
+.site-dawo #features .section__intro {
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+}
+
+.site-dawo #features .section__intro p {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--fp-muted);
+}
+
+/* Slotlar — kichikroq kartochkalar */
+.site-dawo #slots .games-grid,
+.site-dawo .section--alt .games-grid {
+  gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (min-width: 640px) {
+  .site-dawo #slots .games-grid,
+  .site-dawo .section--alt .games-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.site-dawo .games-grid .game-card__thumb {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  max-height: 88px;
+  overflow: hidden;
+  background: var(--fp-navy-mid, #152238);
+  border-radius: 10px;
+}
+
+.site-dawo .games-grid .game-card__thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+  object-position: center;
+  background: var(--fp-navy-mid, #152238);
+}
+
+@supports not (aspect-ratio: 4 / 3) {
+  .site-dawo .games-grid .game-card__thumb {
+    height: 72px;
+  }
+}
+
+.site-dawo .games-grid .game-card__placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 72px;
+  font-size: 1.5rem;
+  background: var(--fp-navy-mid, #152238);
+}
+
+.site-dawo .games-grid .game-card__body {
+  padding: 0.45rem 0.5rem 0.55rem;
+}
+
+.site-dawo .games-grid .game-card__name {
+  font-size: 0.78rem;
+  line-height: 1.25;
+}
+
+.site-dawo .games-grid .game-card__provider {
+  font-size: 0.68rem;
+}
+
+.site-dawo .games-grid .game-card__play .btn {
+  font-size: 0.72rem;
+  padding: 0.35rem 0.55rem;
+}
+
+/* Umumiy matn uslubi — etalon bo'limlar va SEO */
+.site-dawo .section__title {
+  color: #fff;
+  line-height: 1.2;
+}
+
+.site-dawo .section__subtitle,
+.site-dawo .section__intro p {
+  color: var(--fp-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.site-dawo .section--seo-expansion .section__header {
+  margin-bottom: 1.5rem;
+}
+
+.site-dawo .section--seo-expansion .section__title {
+  font-size: clamp(1.35rem, 3vw, 1.85rem);
+  color: #fff;
+}
+
+.site-dawo .section--seo-expansion .section__subtitle {
+  color: var(--fp-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 42rem;
+}
+
+.site-dawo .seo-expansion__body {
+  margin-top: 0.5rem;
+}
+
+.site-dawo .seo-block--rich > p {
+  color: var(--fp-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin: 0 0 0.85rem;
+}
+
+.site-dawo .seo-block--rich > p:last-child {
+  margin-bottom: 0;
+}
+
+.site-dawo .seo-block--rich .section-list,
+.site-dawo .seo-block--rich .seo-list {
+  color: var(--fp-muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.site-dawo .seo-block--rich .data-table {
+  font-size: 0.88rem;
+}
+
+.site-dawo .footer-disclaimer {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--fp-muted);
+  max-width: 40rem;
+  margin: 0.75rem 0 0;
+}
+
+/* Inline / H2-ratio banners */
+.site-dawo .section-banner--inline {
+  min-height: 120px !important;
+  border-radius: 14px !important;
+  margin: 0.75rem 0 1.25rem !important;
+}
+
+.site-dawo .multipage-banner-gap--inline {
+  margin: 0.5rem 0 1rem;
+}
+
+.site-dawo .seo-block--rich {
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.5rem;
+  border-radius: 18px;
+  background: linear-gradient(145deg, rgba(21, 34, 56, 0.55), rgba(11, 21, 40, 0.75));
+  border: 1px solid rgba(184, 255, 0, 0.1);
+}
+
+.site-dawo .seo-block--rich > h2 {
+  margin-top: 0;
+  color: #fff;
+  font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.site-dawo .seo-block--rich .multipage-banner-gap--inline {
+  margin: 0.85rem 0 1.15rem;
+}
+
+.site-dawo .seo-block--rich .section-banner--inline .section-banner__tag {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.site-dawo .seo-block--rich .section-banner--inline .section-banner__title {
+  font-size: clamp(0.95rem, 2.2vw, 1.2rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.site-dawo .seo-block--rich .section-banner--inline .section-banner__sub {
+  font-size: 0.78rem;
+  line-height: 1.35;
+  opacity: 0.9;
+}
+
+.site-dawo .seo-block--rich .fact-strip {
+  margin: 0.85rem 0 1rem;
+}
+
+.site-dawo .seo-block--rich .fact-chip {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+/* Promo visual — hero uslubida + kod badge */
+.site-dawo .promo-block__visual--hero {
+  position: relative;
+  margin: 0 auto;
+  max-width: min(100%, 420px);
+}
+
+.site-dawo .promo-block__visual--hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: min(745px, 70vh);
+  object-fit: contain;
+  background: transparent !important;
+  filter: drop-shadow(0 14px 32px rgba(0, 0, 0, 0.5));
+}
+
+.site-dawo .promo-block__code-badge {
+  position: absolute;
+  left: 50%;
+  bottom: 18%;
+  transform: translateX(-50%);
+  padding: 0.55rem 1.1rem;
+  border-radius: 12px;
+  font-family: "SF Mono", "Fira Code", "Consolas", monospace;
+  font-size: clamp(1.1rem, 3.5vw, 1.45rem);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: #0b1528;
+  background: linear-gradient(135deg, #b8ff00 0%, #9de600 100%);
+  border: 2px solid rgba(11, 21, 40, 0.85);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* To'lov jadvali — SVG logotiplar */
+.site-dawo .payment-logos-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0 0 1.1rem;
+  padding: 0.75rem 0.85rem;
+  border-radius: 14px;
+  background: rgba(11, 21, 40, 0.55);
+  border: 1px solid rgba(184, 255, 0, 0.12);
+}
+
+.site-dawo .payment-logos-strip__item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.55rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.site-dawo .payment-logos-strip__item img {
+  display: block;
+  height: 26px;
+  width: auto;
+  max-width: 88px;
+  object-fit: contain;
+}
+
+.site-dawo .payment-method-cell {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.site-dawo .payment-method-cell__logo {
+  flex-shrink: 0;
+  height: 22px;
+  width: auto;
+  max-width: 72px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.site-dawo .data-table--payments td:first-child {
+  min-width: 9.5rem;
+}
+
+/* Mobil — gorizontal app banner */
+.site-dawo .app-download__shot--banner {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(184, 255, 0, 0.15);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+.site-dawo .app-download__shot--banner img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 900px) {
+  .site-dawo .app-download {
+    grid-template-columns: minmax(280px, 1.1fr) 1fr;
+  }
+
+  .site-dawo .app-download__shot--banner {
+    max-width: none;
+  }
+}
+
+/* Ichki havolalar — matn ichida */
+.site-dawo .section__intro .text-link,
+.site-dawo .content-block .text-link {
+  color: var(--fp-lime, #b8ff00);
+  text-decoration: underline;
+  text-decoration-color: rgba(184, 255, 0, 0.35);
+  text-underline-offset: 0.15em;
+}
+
+.site-dawo .section__intro .text-link:hover,
+.site-dawo .content-block .text-link:hover {
+  color: #d4ff4d;
+  text-decoration-color: rgba(184, 255, 0, 0.7);
+}
+
+/* Info cards (qttk feature-card style) */
+.site-dawo .info-card-grid {
+  display: grid;
+  gap: 0.85rem;
+  margin: 1.25rem 0;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+
+.site-dawo .info-card-grid--2 { grid-template-columns: repeat(2, 1fr); }
+.site-dawo .info-card-grid--3 { grid-template-columns: repeat(3, 1fr); }
+
+.site-dawo .info-card {
+  padding: 1rem 1.1rem;
+  border-radius: 14px;
+  background: rgba(11, 21, 40, 0.85);
+  border: 1px solid rgba(30, 111, 255, 0.2);
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.site-dawo .info-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(184, 255, 0, 0.35);
+}
+
+.site-dawo .info-card__icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.site-dawo .info-card__title {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+  color: var(--fp-lime);
+}
+
+.site-dawo .info-card__text {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--fp-muted);
+}
+
+/* Step flow */
+.site-dawo .step-flow {
+  list-style: none;
+  margin: 1.25rem 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.site-dawo .step-flow__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  background: rgba(30, 111, 255, 0.08);
+  border-left: 3px solid var(--fp-blue);
+}
+
+.site-dawo .step-flow__num {
+  flex-shrink: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--fp-lime);
+  color: var(--fp-navy);
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+
+.site-dawo .step-flow__text {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--fp-ink);
+}
+
+/* Metric panel */
+.site-dawo .metric-panel {
+  margin: 1.25rem 0;
+  padding: 1rem 1.15rem;
+  border-radius: 14px;
+  background: rgba(11, 21, 40, 0.7);
+  border: 1px solid rgba(184, 255, 0, 0.12);
+}
+
+.site-dawo .metric-row + .metric-row { margin-top: 0.65rem; }
+
+.site-dawo .metric-row__head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  margin-bottom: 0.3rem;
+  color: var(--fp-muted);
+}
+
+.site-dawo .metric-row__head strong { color: var(--fp-lime); }
+
+.site-dawo .metric-row__track {
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.site-dawo .metric-row__fill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--fp-blue), var(--fp-lime));
+}
+
+/* Split compare */
+.site-dawo .split-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+  margin: 1.25rem 0;
+}
+
+@media (max-width: 640px) {
+  .site-dawo .split-compare { grid-template-columns: 1fr; }
+  .site-dawo .info-card-grid--3 { grid-template-columns: 1fr; }
+}
+
+.site-dawo .split-compare__col {
+  padding: 1rem 1.1rem;
+  border-radius: 14px;
+}
+
+.site-dawo .split-compare__col--pro {
+  background: rgba(184, 255, 0, 0.08);
+  border: 1px solid rgba(184, 255, 0, 0.22);
+}
+
+.site-dawo .split-compare__col--con {
+  background: rgba(30, 111, 255, 0.08);
+  border: 1px solid rgba(30, 111, 255, 0.22);
+}
+
+.site-dawo .split-compare__title {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  color: var(--fp-lime);
+}
+
+.site-dawo .split-compare__col ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--fp-muted);
+}
+
+/* Fact chips */
+.site-dawo .fact-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.1rem 0;
+}
+
+.site-dawo .fact-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  background: rgba(21, 34, 56, 0.9);
+  border: 1px solid rgba(184, 255, 0, 0.18);
+  color: var(--fp-ink);
+}
+
+.site-dawo .fact-chip em { font-style: normal; }
+
+/* Welcome tiers infographic */
+.site-dawo .welcome-tiers {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+  margin: 1.25rem 0;
+}
+
+@media (max-width: 768px) {
+  .site-dawo .welcome-tiers { grid-template-columns: repeat(2, 1fr); }
+}
+
+.site-dawo .tier-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.85rem 0.5rem;
+  border-radius: 12px;
+  text-align: center;
+  background: rgba(11, 21, 40, 0.9);
+  border: 1px solid rgba(30, 111, 255, 0.25);
+}
+
+.site-dawo .tier-card--total {
+  border-color: rgba(184, 255, 0, 0.45);
+  background: linear-gradient(160deg, rgba(184, 255, 0, 0.15), rgba(11, 21, 40, 0.95));
+}
+
+.site-dawo .tier-card__step {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--fp-muted);
+}
+
+.site-dawo .tier-card__pct {
+  font-size: 1.35rem;
+  color: var(--fp-lime);
+}
+
+.site-dawo .tier-card__amt,
+.site-dawo .tier-card__fs {
+  font-size: 0.75rem;
+  color: var(--fp-ink);
+}
+
+/* Payment speed infographic */
+.site-dawo .pay-infographic {
+  margin: 1.25rem 0;
+  padding: 1rem 1.15rem;
+  border-radius: 14px;
+  background: rgba(11, 21, 40, 0.75);
+  border: 1px solid rgba(184, 255, 0, 0.12);
+}
+
+.site-dawo .pay-speed {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr 4.5rem;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.55rem;
+}
+
+.site-dawo .pay-speed__name { font-size: 0.82rem; font-weight: 600; color: var(--fp-lime); }
+.site-dawo .pay-speed__time { font-size: 0.75rem; color: var(--fp-muted); text-align: right; }
+
+.site-dawo .pay-speed__bar {
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.site-dawo .pay-speed__fill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--fp-blue), var(--fp-lime));
+}
+
+/* Compact game strip */
+.site-dawo .game-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.65rem;
+  margin: 1.25rem 0;
+}
+
+@media (max-width: 768px) {
+  .site-dawo .game-strip { grid-template-columns: repeat(2, 1fr); }
+}
+
+.site-dawo .game-card--compact {
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(11, 21, 40, 0.9);
+  border: 1px solid rgba(184, 255, 0, 0.15);
+}
+
+.site-dawo .game-card--compact .game-card__thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.site-dawo .game-card--compact .game-card__body {
+  padding: 0.5rem 0.65rem 0.65rem;
+}
+
+.site-dawo .game-card--compact .game-card__name {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--fp-ink);
+}
+
+.site-dawo .game-card--compact .game-card__provider {
+  margin: 0.15rem 0 0;
+  font-size: 0.7rem;
+  color: var(--fp-muted);
+}
+
+.site-dawo .table-card--rich {
+  margin: 1.1rem 0;
+  padding: 0.75rem;
+  border-radius: 14px;
+  background: rgba(11, 21, 40, 0.5);
+  border: 1px solid rgba(30, 111, 255, 0.15);
+}
+
+/* ═══ QA: typography, cross-browser, theme conflict resets ═══ */
+
+html.site-dawo-root,
+html:has(body.site-dawo) {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color-scheme: dark;
+}
+
+body.site-dawo.site-fairpari-official {
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.site-dawo.site-fairpari-official .btn--gold,
+body.site-dawo.site-fairpari-official .btn--primary.app-platform__cta,
+body.site-dawo.site-fairpari-official .sticky-cta__btn {
+  background: linear-gradient(135deg, #b8ff00, #9ae600) !important;
+  color: #0b1528 !important;
+  border: none !important;
+}
+
+body.site-dawo.site-fairpari-official .btn--primary:not(.app-platform__cta) {
+  background: linear-gradient(135deg, #1e6fff, #1554c7) !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+body.site-dawo.site-fairpari-official .btn--ghost {
+  border: 1px solid rgba(184, 255, 0, 0.35) !important;
+  color: var(--fp-ink, #f1f5f9) !important;
+  background: transparent !important;
+}
+
+body.site-dawo.site-fairpari-official .section__eyebrow {
+  background: transparent !important;
+  color: var(--fp-lime) !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+}
+
+body.site-dawo.site-fairpari-official .section__title {
+  font-size: clamp(1.35rem, 3vw, 1.85rem) !important;
+  font-weight: 800 !important;
+  color: #fff !important;
+  line-height: 1.2 !important;
+}
+
+body.site-dawo.site-fairpari-official .section__subtitle,
+body.site-dawo.site-fairpari-official .section__intro,
+body.site-dawo.site-fairpari-official .section__intro p,
+body.site-dawo.site-fairpari-official .content-block__lead,
+body.site-dawo.site-fairpari-official .content-block p,
+body.site-dawo.site-fairpari-official .seo-block--rich p,
+body.site-dawo.site-fairpari-official .seo-block--rich li,
+body.site-dawo.site-fairpari-official .highlight-row__text,
+body.site-dawo.site-fairpari-official .step-flow__text,
+body.site-dawo.site-fairpari-official .split-compare__col li,
+body.site-dawo.site-fairpari-official .winner-card__story,
+body.site-dawo.site-fairpari-official .faq-item__answer,
+body.site-dawo.site-fairpari-official .legal-page p,
+body.site-dawo.site-fairpari-official .legal-page li {
+  font-size: 0.9375rem !important;
+  line-height: 1.65 !important;
+  color: var(--fp-muted, #94a3b8) !important;
+}
+
+body.site-dawo.site-fairpari-official .seo-block--rich > h2,
+body.site-dawo.site-fairpari-official .legal-page h2 {
+  font-size: clamp(1.1rem, 2.4vw, 1.3rem) !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+  line-height: 1.25 !important;
+  margin: 0 0 0.75rem !important;
+}
+
+body.site-dawo.site-fairpari-official .info-card__title {
+  font-size: 0.9rem !important;
+  font-weight: 700 !important;
+  margin: 0 0 0.35rem !important;
+}
+
+body.site-dawo.site-fairpari-official .info-card__text {
+  font-size: 0.85rem !important;
+  line-height: 1.5 !important;
+}
+
+body.site-dawo.site-fairpari-official .data-table,
+body.site-dawo.site-fairpari-official .data-table td,
+body.site-dawo.site-fairpari-official .data-table th {
+  font-size: 0.875rem !important;
+}
+
+body.site-dawo.site-fairpari-official .text-link,
+body.site-dawo.site-fairpari-official .section__intro .text-link,
+body.site-dawo.site-fairpari-official .content-block .text-link,
+body.site-dawo.site-fairpari-official .seo-block--rich .text-link {
+  color: var(--fp-lime, #b8ff00) !important;
+  text-decoration: underline;
+  text-decoration-color: rgba(184, 255, 0, 0.35);
+  text-underline-offset: 0.15em;
+}
+
+body.site-dawo.site-fairpari-official .hero__subtitle {
+  font-size: 1rem !important;
+  line-height: 1.55 !important;
+  color: var(--fp-muted, #94a3b8) !important;
+}
+
+body.site-dawo.site-fairpari-official .section-banner--hero .section-banner__bg {
+  object-fit: cover !important;
+  -o-object-fit: cover !important;
+}
+
+body.site-dawo.site-fairpari-official .hero__art:not(.section-banner--hero) img {
+  object-fit: contain !important;
+  background: transparent !important;
+}
+
+body.site-dawo.site-fairpari-official .game-card {
+  border: 1px solid rgba(184, 255, 0, 0.15) !important;
+  border-radius: 12px !important;
+}
+
+body.site-dawo.site-fairpari-official .stats-bar--cards .stat-item {
+  border: 1px solid rgba(184, 255, 0, 0.12) !important;
+  border-left: 3px solid var(--fp-lime, #b8ff00) !important;
+  background: rgba(21, 34, 56, 0.85) !important;
+}
+
+body.site-dawo.site-fairpari-official .section--alt {
+  background: linear-gradient(180deg, rgba(21, 34, 56, 0.6), rgba(11, 21, 40, 0.4)) !important;
+}
+
+body.site-dawo.site-fairpari-official .legal-page {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.5rem 0 2.5rem;
+}
+
+body.site-dawo.site-fairpari-official .legal-page h1 {
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  color: #fff;
+  margin: 0 0 1rem;
+}
+
+body.site-dawo.site-fairpari-official .legal-page h2 {
+  margin-top: 1.5rem;
+}
+
+body.site-dawo.site-fairpari-official .section-banner__bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+
+@supports not (object-fit: cover) {
+  body.site-dawo.site-fairpari-official .section-banner__bg {
+    min-height: 120px;
+  }
+}
+
+body.site-dawo.site-fairpari-official .promo-block__bg,
+body.site-dawo.site-fairpari-official .section-banner--hero .section-banner__bg,
+body.site-dawo.site-fairpari-official .app-download__shot--banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+
+body.site-dawo.site-fairpari-official .table-scroll {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+body.site-dawo.site-fairpari-official .on-page-nav.page-toc a {
+  font-size: 0.85rem !important;
+}
+
+@media (max-width: 767px) {
+  body.site-dawo.site-fairpari-official .hero__slide-inner--split {
+    grid-template-columns: 1fr !important;
+    padding: 1.5rem 1rem !important;
+    gap: 1rem !important;
+  }
+
+  body.site-dawo.site-fairpari-official .section-banner--hero {
+    max-width: 100%;
+    min-height: 112px;
+    margin: 0;
+  }
+
+  body.site-dawo.site-fairpari-official .hero__art:not(.section-banner--hero) {
+    max-width: min(280px, 72vw);
+    margin: 0 auto;
+  }
+
+  body.site-dawo.site-fairpari-official .info-card-grid--3 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.site-dawo.site-fairpari-official *,
+  body.site-dawo.site-fairpari-official *::before,
+  body.site-dawo.site-fairpari-official *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
