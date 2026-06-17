@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="FairPari">
-  <rect width="32" height="32" rx="7" fill="#0c111a"/>
-  <g transform="translate(3.2,2.8) scale(0.2)">
-    <path fill="#0075FF" d="M19.5,0L0,109.9h109.9L129.4,0H19.5z"/>
-    <polygon fill="#FFFFFF" points="104.9,19.9 100.5,44.5 34.1,44.5 38.6,19.9"/>
-    <polygon fill="#FFFFFF" points="98.4,56.5 94,81 53.7,81 23.1,105.4 32.1,56.5"/>
-  </g>
-</svg>

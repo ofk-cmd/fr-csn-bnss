@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://fairpari-casino-bonuses.com/sitemap.xml
