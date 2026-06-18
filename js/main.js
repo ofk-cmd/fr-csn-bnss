@@ -135,9 +135,20 @@
     promoBadge.textContent = promoCodeEl.textContent.trim();
   }
 
+  var pageLang = (document.documentElement.lang || "uz").toLowerCase().slice(0, 2);
+  var copyI18n = {
+    uz: { copied: "Nusxalandi!", prompt: "Promo kodni nusxalang:" },
+    ru: { copied: "Скопировано!", prompt: "Скопируйте промокод:" },
+    en: { copied: "Copied!", prompt: "Copy promo code:" }
+  };
+  var copyL = copyI18n[pageLang] || copyI18n.uz;
+
   var copyPromoBtns = document.querySelectorAll(".js-copy-promo");
   copyPromoBtns.forEach(function (btn) {
-    var defaultLabel = btn.textContent;
+    var defaultLabel = btn.textContent.trim();
+    if (pageLang === "ru" && defaultLabel === "Nusxalash") defaultLabel = "Копировать";
+    if (pageLang === "en" && defaultLabel === "Nusxalash") defaultLabel = "Copy";
+    btn.textContent = defaultLabel;
     btn.addEventListener("click", function (event) {
       event.preventDefault();
       event.stopPropagation();
@@ -148,7 +159,7 @@
 
       function onCopied() {
         btn.classList.add("is-copied");
-        btn.textContent = "Nusxalandi!";
+        btn.textContent = copyL.copied;
         window.setTimeout(function () {
           btn.classList.remove("is-copied");
           btn.textContent = defaultLabel;
@@ -157,10 +168,10 @@
 
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(code).then(onCopied).catch(function () {
-          window.prompt("Promo kodni nusxalang:", code);
+          window.prompt(copyL.prompt, code);
         });
       } else {
-        window.prompt("Promo kodni nusxalang:", code);
+        window.prompt(copyL.prompt, code);
       }
     });
   });
