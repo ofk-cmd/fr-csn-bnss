@@ -1,0 +1,224 @@
+/* fairpari-casino-bonuses.com v2 — светлый информативный шаблон */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+html[data-template="v2"] {
+  --font-v2: "Inter", "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html[data-template="v2"] body.site-fairpari-light,
+html[data-template="v2"] .site-fairpari-light {
+  --bg: #fafbfc;
+  --bg-elevated: #ffffff;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f4f7fa;
+  --surface: #f4f7fa;
+  --ink: #152033;
+  --muted: #5a6778;
+  --accent: #0d9488;
+  --accent-bright: #0f766e;
+  --accent-dim: rgba(13, 148, 136, 0.1);
+  --gold: #9dcc00;
+  --gold-bright: #84b800;
+  --gold-dim: rgba(157, 204, 0, 0.12);
+  --border: #e3e8ef;
+  --border-strong: rgba(13, 148, 136, 0.32);
+  --shadow: 0 4px 20px rgba(21, 32, 51, 0.07);
+  --shadow-glow: 0 4px 24px rgba(157, 204, 0, 0.15);
+  --header-h: 68px;
+  --max: 1120px;
+}
+
+html[data-template="v2"] body.site-fairpari-light {
+  font-family: var(--font-v2);
+  font-size: 18px;
+  line-height: 1.65;
+  background: linear-gradient(180deg, #fafbfc 0%, #f4f7fa 100%);
+  color: var(--ink);
+}
+
+html[data-template="v2"] .site-fairpari-light .js-go-partner {
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+html[data-template="v2"] .site-fairpari-light .site-header {
+  background: rgba(255, 255, 255, 0.97);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 0 rgba(21, 32, 51, 0.04);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+html[data-template="v2"] .site-fairpari-light .nav-desktop a {
+  color: var(--muted);
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 0.4rem 0.65rem;
+}
+
+html[data-template="v2"] .site-fairpari-light .nav-desktop a:hover {
+  color: var(--ink);
+  background: var(--accent-dim);
+}
+
+html[data-template="v2"] .site-fairpari-light .lang-switch__link {
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  color: var(--accent-bright);
+  background: var(--accent-dim);
+  text-decoration: none;
+}
+
+html[data-template="v2"] .site-fairpari-light .btn--primary {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-bright) 100%);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0 4px 16px rgba(13, 148, 136, 0.25);
+}
+
+html[data-template="v2"] .site-fairpari-light .btn--gold {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-bright) 100%);
+  color: #152033;
+  font-weight: 700;
+  border: none;
+  box-shadow: var(--shadow-glow);
+}
+
+html[data-template="v2"] .site-fairpari-light .btn--ghost {
+  border: 2px solid var(--border-strong);
+  color: var(--accent-bright);
+  background: #fff;
+  font-weight: 600;
+}
+
+html[data-template="v2"] .site-fairpari-light .live-wins {
+  background: linear-gradient(90deg, #152033 0%, #1e2d42 100%);
+  border-bottom: 2px solid var(--gold);
+}
+
+html[data-template="v2"] .site-fairpari-light .hero__banner,
+html[data-template="v2"] .site-fairpari-light .hero__slide-inner--split {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+html[data-template="v2"] .site-fairpari-light .hero__title {
+  color: var(--ink);
+}
+
+html[data-template="v2"] .site-fairpari-light .hero__subtitle {
+  color: var(--muted);
+}
+
+html[data-template="v2"] .site-fairpari-light .stat-item,
+html[data-template="v2"] .site-fairpari-light .stat-bar,
+html[data-template="v2"] .site-fairpari-light .promo-block {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(21, 32, 51, 0.04);
+}
+
+html[data-template="v2"] .site-fairpari-light .section:nth-child(even) {
+  background: rgba(255, 255, 255, 0.65);
+}
+
+html[data-template="v2"] .site-fairpari-light .section__eyebrow {
+  color: var(--accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.78rem;
+}
+
+html[data-template="v2"] .site-fairpari-light .section__title {
+  color: var(--ink);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+html[data-template="v2"] .site-fairpari-light .data-table-wrap {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+html[data-template="v2"] .site-fairpari-light .data-table th {
+  background: #f4f7fa;
+  color: var(--muted);
+}
+
+html[data-template="v2"] .site-fairpari-light .seo-block--rich {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+html[data-template="v2"] .site-fairpari-light .seo-block--rich h2,
+html[data-template="v2"] .site-fairpari-light .seo-block--rich h3 {
+  color: var(--ink);
+  border-bottom: 2px solid var(--gold-dim);
+  padding-bottom: 0.35rem;
+}
+
+html[data-template="v2"] .site-fairpari-light .on-page-nav a,
+html[data-template="v2"] .site-fairpari-light .related-link {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--ink);
+}
+
+html[data-template="v2"] .site-fairpari-light .related-link:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow);
+}
+
+html[data-template="v2"] .site-fairpari-light .faq-item {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+html[data-template="v2"] .site-fairpari-light .site-footer {
+  background: #fff;
+  border-top: 1px solid var(--border);
+}
+
+html[data-template="v2"] .site-fairpari-light .sticky-cta__panel {
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid var(--border);
+  box-shadow: 0 -4px 24px rgba(21, 32, 51, 0.12);
+}
+
+html[data-template="v2"] .site-fairpari-light .back-to-top {
+  background: #fff;
+  border: 1px solid var(--border);
+  color: var(--accent);
+}
+
+html[data-template="v2"] .site-fairpari-light .legal-doc h1,
+html[data-template="v2"] .site-fairpari-light .legal-doc h2 {
+  color: var(--ink);
+}
+
+html[data-template="v2"] .site-fairpari-light .container {
+  max-width: var(--max);
+}
+
+@media (max-width: 768px) {
+  html[data-template="v2"] body.site-fairpari-light {
+    font-size: 17px;
+  }
+}

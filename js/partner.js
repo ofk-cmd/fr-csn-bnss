@@ -10,7 +10,7 @@
   }
 
   function openPartnerLink() {
-    if (!PARTNER_URL) return;
+    if (!PARTNER_URL || PARTNER_URL === "#") return;
     var now = Date.now();
     if (now - lastOpenAt < 400) return;
     lastOpenAt = now;
@@ -30,4 +30,21 @@
   }
 
   document.addEventListener("click", onPartnerClick, true);
+
+  function bindButtons() {
+    document.querySelectorAll(".js-go-partner").forEach(function (btn) {
+      if (btn.dataset.partnerBound === "1") return;
+      btn.dataset.partnerBound = "1";
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        openPartnerLink();
+      });
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", bindButtons);
+  } else {
+    bindButtons();
+  }
 })();
